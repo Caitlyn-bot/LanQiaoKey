@@ -21,7 +21,8 @@ public class Basic_02 {
         Scanner myScanner = new Scanner(System.in);
         int n = myScanner.nextInt();
         //定义count存放总和
-        int count = 0;
+        //注意：这里不能使用int，因为int不足以存放本题的大规模结果
+        long count = 0;
         for (int i = 1; i <= n;i++){
             count += i;
         }
