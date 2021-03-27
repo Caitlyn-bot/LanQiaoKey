@@ -1,5 +1,7 @@
 package Basic;
 
+import java.util.Scanner;
+
 /**
  * 序列求和
  * 求1+2+3+...+n的值。
@@ -16,6 +18,13 @@ package Basic;
  */
 public class Basic_02 {
     public static void main(String[] args) {
-
+        Scanner myScanner = new Scanner(System.in);
+        int n = myScanner.nextInt();
+        //定义count存放总和
+        int count = 0;
+        for (int i = 1; i <= n;i++){
+            count += i;
+        }
+        System.out.println(count);
     }
 }
