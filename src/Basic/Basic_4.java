@@ -25,18 +25,24 @@ public class Basic_4 {
         Scanner myScanner = new Scanner(System.in);
         int n = myScanner.nextInt();
         int[] arr = new int[n];
+        //输入数组的数
         for (int i = 0; i < n; i++) {
             arr[i] = myScanner.nextInt();
         }
+        //max存放最大值
         int max = arr[0];
+        //min存放最小值
         int min = arr[0];
+        //sum存放和
         int sum = 0;
         for (int i = 0; i < n; i++) {
             sum += arr[i];
             if (max <arr[i]){
+                //如果max小于该数,就将该数赋值给max
                 max = arr[i];
             }
             if (min > arr[i]){
+                //如果max大于该数,就将该数赋值给min
                 min = arr[i];
             }
         }
